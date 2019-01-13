@@ -1,0 +1,8 @@
+*.png
+*.json
+*.log
+*.pyc
+*.*~
+*~
+*__pycache__
+*.project

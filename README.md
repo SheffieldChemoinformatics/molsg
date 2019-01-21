@@ -1,5 +1,11 @@
 # MolSG
-Code for creating 3D Molecular Shape descriptors using Spectral and Diffusion Geometry.
+Code for creating 3D Molecular Shape descriptors using Spectral and Diffusion Geometry. It is released under a 3-clause BSD license. See LICENSE.txt for details.
+
+If you use MolSG in a scientific paper or derivative work, please cite the paper:
+Alignment-Free Molecular Shape Comparison Using Spectral Geometry: The Framework
+Matthew P. Seddon, David A. Cosgrove, Martin J. Packer, and Valerie J. Gillet
+Journal of Chemical Information and Modeling Article ASAP
+DOI: 10.1021/acs.jcim.8b00676
 
 ## Installation
 1. `git clone` this directory
@@ -17,9 +23,9 @@ The descriptor has three stages:
 		 This maps the local descriptor to a single descriptor in order to allow shape to shape comparison
 
 ## Work flows
-Example work flows to show how to use the module are included in scripts. Scripts are run as python modules from the directory of the code. For example, `$ python -m scripts.process_meshes` converts the off meshes from the mesh generation output to a directory of numpy versions. The mesh generation is carried out by TMSMesh from the pqr.tar.gz file which produced the off.tar.gz files in the `ampc` subdirectory.
+Example work flows to show how to use the module are included in scripts. Scripts are run as python modules from the directory of the code. For example, `$ python -m scripts.process_meshes` converts the off meshes from the mesh generation outp ut to a directory of numpy versions. The mesh generation is carried out by TMSMesh from the pqr.tar.gz file which produced the off.tar.gz files in the `ampc` subdirectory.
 
-To run the following examples you will need to extract the tarballs.
+To run the following examples you will need to extract the `data/ampc/off.tar.gz` file to `data/ampc/off`.
 
 The example scripts are as follows:
 - *process_meshes* : turn directory of off files to directory of numpy files.
